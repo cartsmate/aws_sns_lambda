@@ -10,7 +10,6 @@ from mail_sender import EmailSender
 from text_sender import TextSender
 
 
-# if __name__ == '__main__':
 def lambda_handler(event, context):
     # TEST DEPLOYMENT - with NO DEPENDENCIES OR CREDENTIALS
     return {
@@ -39,3 +38,7 @@ def lambda_handler(event, context):
     #     print(f"{now} | keyword: '{search_phrase}' NOT found on site .... send warning text message")
     #     TextSender.send_text(config)
     #     EmailSender().send_email_action()
+
+
+# if __name__ == '__main__':
+#     print(lambda_handler(event=None, context=None))
