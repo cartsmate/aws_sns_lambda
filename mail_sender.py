@@ -5,8 +5,8 @@ from config import Config
 class EmailSender:
 
     def __init__(self):
+        # SET CREDENTIALS
         config = Config.get_config()
-        # print(config)
         self.client = boto3.client('ses',
                                    region_name='eu-west-2',
                                    aws_access_key_id=config['ACCESS_ID'],

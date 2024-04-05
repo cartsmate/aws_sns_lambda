@@ -7,7 +7,6 @@ class Config:
     @staticmethod
     def get_config():
         path = os.getcwd()
-        # path = '/Users/andycarter/develop/pycharm/flask_projects/thepubpicker'
         # print('path', path)
         total_path = path + '/.env'
 
